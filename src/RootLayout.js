@@ -1,16 +1,17 @@
 import React from "react";
-import Logo from "./logo.svg";
 import { Form, NavLink, Outlet } from "react-router-dom";
-
+import RedditIcon from '@mui/icons-material/Reddit';
+import { SvgIcon } from "@mui/material";
 export default function RootLayout() {
     return (
         <div className="root-layout">
             <header>
-                <nav>
-                    <NavLink to="/">HOME</NavLink>
-                    <NavLink to="categories">CATEGORIES</NavLink>
-                    <NavLink to="about">ABOUT</NavLink>
-                    <NavLink to="profile">PROFILE</NavLink>
+                <RedditIcon className="logo"/>
+                <nav className="menu">
+                    <NavLink to="/" className="navlink">HOME</NavLink>
+                    <NavLink to="categories" className="navlink">CATEGORIES</NavLink>
+                    <NavLink to="about" className="navlink">ABOUT</NavLink>
+                    <NavLink to="profile" className="navlink">PROFILE</NavLink>
                 </nav>
             </header>
             <main>
