@@ -6,6 +6,7 @@
 .App {
   text-align: center;
   font-family: "Playfair Display SC", serif;
+  
 }
 
 .App-logo {
@@ -72,4 +73,28 @@
 .navlink {
   color: rgb(101, 40, 247);
   text-decoration: none;
+}
+
+.categories-menu {
+  background-color: rgb(101, 40, 247);
+  width: 99dvw;
+  margin-left: 0.5dvw;
+  margin-right: 0.5dvw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10dvh;
+  border-radius: 20px;
+}
+
+.category {
+  background-color: rgb(101, 40, 247);
+  text-decoration: none;
+  color: rgb(237, 228, 255);
+}
+
+
+.category .a:active {
+  background: #61dafb;
 }

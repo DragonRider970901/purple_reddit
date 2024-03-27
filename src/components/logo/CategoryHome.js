@@ -12,7 +12,7 @@ export default function CategoryHome() {
     }
 return (
         <div>
-            <h1>{category}</h1>
+            <h1>{category.toUpperCase()}</h1>
             <h2>{id}</h2>
         </div>
     );

@@ -16,8 +16,10 @@ export const categoriesArray = [{id: "1", name: "art"},
 
 export default function Categories() {
     return (
-        <div>
-            {categoriesArray.map(category => <NavLink to={category.id} className="category">{category.name}</NavLink>)}
+        <div className="categories">
+            <nav className="categories-menu">
+                {categoriesArray.map(category => <NavLink to={category.id} className="category">{category.name.toUpperCase()}</NavLink>)}
+            </nav>
             <Outlet />
         </div>
     );
