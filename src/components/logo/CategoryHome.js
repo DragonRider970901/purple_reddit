@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { categoriesArray } from "../../pages/Categories";
+import { categoriesArray } from "../../features/Categories";
 export default function CategoryHome() {
     const { id } = useParams();
     let category = "Category";
